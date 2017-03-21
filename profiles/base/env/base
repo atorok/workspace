@@ -10,3 +10,6 @@ export INPUTRC=~/.env/inputrc
 export PYTHONPATH=~/lib/python:$PYTHONPATH
 
 [ -z "$TMUX" ] && export TERM=xterm-256color
+
+# Enable parallel XZ compression and decompression
+export XZ_OPT="-T 0"
