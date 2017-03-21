@@ -28,3 +28,6 @@
 [submodule "liquidprompt"]
 	path = profiles/base/liquidprompt
 	url = https://github.com/nojhan/liquidprompt.git
+[submodule "profiles/base/vim/bundle/logstash.vim"]
+	path = profiles/base/vim/bundle/logstash.vim
+	url = https://github.com/robbles/logstash.vim.git
