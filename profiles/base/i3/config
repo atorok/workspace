@@ -30,7 +30,7 @@ font pango:Liberation Sans 10
 floating_modifier $mod
 
 #### Default apps 
-bindsym $mod+Return exec xfce4-terminal --working-directory `xcwd`
+bindsym $mod+Return exec xfce4-terminal --working-directory `xcwd` --command="zsh"
 bindsym $mod+0x5c exec thunar `xcwd`
 
 # kill focused window

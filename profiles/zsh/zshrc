@@ -42,7 +42,7 @@ key[PageDown]=${terminfo[knp]}
 # TODO Arch packages
 
 . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-. ~/.liquidprompt/liquidprompt.plugin.zsh
+. ~/.liquidprompt/liquidprompt
 
 
 setopt noautomenu

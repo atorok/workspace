@@ -192,3 +192,5 @@ set noerrorbells visualbell t_vb=
 if has('gui_running')
     set guifont=Liberation\ Mono\ 14
 endif
+
+let g:pymode_rope = 0

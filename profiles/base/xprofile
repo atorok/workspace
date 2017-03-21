@@ -1,10 +1,12 @@
-xrandr --dpi 157
-xrandr --output DP-1 --mode 3840x2160 --left-of DVI-I-0 --primary
+xrandr --dpi 163
 xsetroot -solid '#000000'
 compton -b --config ~/.compton.conf
 start-pulseaudio-x11
 setxkbmap -option ctrl:nocaps
 xrdb -merge ~/.Xresource
 xbindkeys
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa_github
 
 test -f ~/.xprofile.local &&  source ~/.xprofile.local

@@ -1,16 +1,15 @@
 [user]
-	email = alpar.torok@devfactory.com
 	name = Alpar Torok
-#[http]
-#	proxy = proxy.tay.cpqcorp.net:8080
+	email = torokalpar@gmail.com
 [color]
 	ui = true
 [push]
 	default = upstream
 [alias]
     review = !post-review-git
-	forcepush = push -u origin --force HEAD
+    forcepush = push -u origin --force HEAD
+    change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "
 [merge]
 	tool = vimdiff
-[core]
-	askpass = /usr/bin/ksshaskpass
+#[core]
+#	askpass = /usr/bin/sshaskpass
