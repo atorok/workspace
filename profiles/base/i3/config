@@ -129,7 +129,7 @@ bindsym $mod+Shift+0 move container to $w10
 # Start i3bar to display a workspace bar
 bar {
     strip_workspace_numbers yes
-    tray_output primary
+    #tray_output primary
     font pango:Source Code Pro for Powerline, FontAwesome 8
     position top
 
