@@ -1,6 +1,7 @@
 if ! [ -f  ~/.allshesllsrc.base ] ; then echo "No such file: ~/.allshesllsrc.base" ; fi
 source ~/.allshesllsrc.base
 
+. /usr/share/stderred/stderred.sh
 
 # TODO: Rename
 source_rc .env/bash_functions
@@ -65,3 +66,5 @@ compinit
 bindkey "${key[PageUp]}" history-beginning-search-backward
 bindkey "${key[PageDown]}" history-beginning-search-forward
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -f /usr/bin/aws_zsh_completer.sh ]] && source /usr/bin/aws_zsh_completer.sh
