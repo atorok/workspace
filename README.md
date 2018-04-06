@@ -24,3 +24,11 @@ example.
 
 The installation creates symlinks so a git status will show what changed. Just commit the changes.
 Make sure that no configuration is created that is not linked.
+
+# Tweaks 
+
+Google Chrome / Chromium. Add to `/usr/share/applications/google-chroem.desktop`
+```
+--high-dpi-support=1 --force-device-scale-factor=1.2
+```
+
