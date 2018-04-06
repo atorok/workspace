@@ -1,4 +1,3 @@
-xrandr --dpi 163
 xsetroot -solid '#000000'
 compton -b --config ~/.compton.conf
 start-pulseaudio-x11
@@ -8,5 +7,7 @@ xbindkeys
 
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa_github
+
+sudo kbdrate -r 40 -d 15
 
 test -f ~/.xprofile.local &&  source ~/.xprofile.local
