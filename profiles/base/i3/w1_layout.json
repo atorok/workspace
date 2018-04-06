@@ -64,11 +64,11 @@
                "x": 0,
                "y": 0
             },
-            "name": "Skype",
+            "name": "Slack",
             "percent": 0.5,
             "swallows": [
                {
-                "title": "^Skype"
+                "title": "^Slack"
                }
             ],
             "type": "con"

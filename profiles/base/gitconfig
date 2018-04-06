@@ -4,12 +4,16 @@
 [color]
 	ui = true
 [push]
-	default = upstream
+	default = current
 [alias]
     review = !post-review-git
     forcepush = push -u origin --force HEAD
     change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "
 [merge]
-	tool = vimdiff
+    tool = vimdiff
+[log]
+  date = relative
+[format]
+  pretty = format:%h %Cblue%ad%Creset %ae %Cgreen%s%Creset    
 #[core]
 #	askpass = /usr/bin/sshaskpass

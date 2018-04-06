@@ -2,7 +2,6 @@ xsetroot -solid '#000000'
 compton -b --config ~/.compton.conf
 start-pulseaudio-x11
 setxkbmap -option ctrl:nocaps
-xrdb -merge ~/.Xresource
 xbindkeys
 
 eval "$(ssh-agent -s)"
