@@ -7,8 +7,9 @@
 	default = current
 [alias]
     review = !post-review-git
-    forcepush = push -u origin --force HEAD
+    forcepush = push -u atorok --force HEAD
     change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "
+    pr = "!f() { git fetch origin pull/$1/head:pr/$1; }; f"
 [merge]
     tool = vimdiff
 [log]

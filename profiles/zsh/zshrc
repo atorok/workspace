@@ -10,6 +10,7 @@ source_rc .env/base
 source_rc .env/vim
 source_rc .env/git
 source_rc .env/tmux.common
+source_rc .env/java
 
 if tty > /dev/null; then
 	source_rc .env/aliases
@@ -67,4 +68,9 @@ bindkey "${key[PageUp]}" history-beginning-search-backward
 bindkey "${key[PageDown]}" history-beginning-search-forward
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 [[ -f /usr/bin/aws_zsh_completer.sh ]] && source /usr/bin/aws_zsh_completer.sh
+[[ -f /opt/google-cloud-sdk/path.zsh.inc ]] && source /opt/google-cloud-sdk/path.zsh.inc
+[[ -f /opt/google-cloud-sdk/completion.zsh.inc ]] && source /opt/google-cloud-sdk/completion.zsh.inc
+
+
