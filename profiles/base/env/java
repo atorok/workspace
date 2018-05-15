@@ -1,6 +1,5 @@
 # vim set ft:sh
-export JAVA_HOME=/usr/lib/jvm/java-10-jdk
-export JAVA9_HOME=/usr/lib/jvm/java-9-jdk
-export JAVA8_HOME=/usr/lib/jvm/java-8-jdk
-export JAVA7_HOME=/usr/lib/jvm/java-7-jdk
-export GRADLE_OPTS="-Xmx200m -Dorg.gradle.jvmargs='-Xmx1024m' --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED --add-opens java.base/java.net=ALL-UNNAMED --add-opens java.base/java.time=ALL-UNNAMED"
+export JAVA_HOME=/usr/lib/jvm/java-10-openjdk/
+export JAVA9_HOME=/usr/lib/jvm/java-9-openjdk/
+export JAVA8_HOME=/usr/lib/jvm/java-8-openjdk/
+export JAVA7_HOME=/usr/lib/jvm/java-7-openjdk/

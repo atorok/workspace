@@ -32,6 +32,8 @@ DOTMODULES="
     Xresources
     liquidprompt
     config
+    i3blocks.conf
+    i3blocks-contrib
 "
 
 MODULES="

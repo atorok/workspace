@@ -30,4 +30,10 @@
 	url = https://github.com/nojhan/liquidprompt.git
 [submodule "profiles/base/vim/bundle/logstash.vim"]
 	path = profiles/base/vim/bundle/logstash.vim
-	url = https://github.com/robbles/logstash.vim.git
+    url = https://github.com/robbles/logstash.vim.git
+[submodule "profiles/base/i3blocks-contrib"]
+	path = profiles/base/i3blocks-contrib
+	url = https://github.com/vivien/i3blocks-contrib.git
+[submodule "profiles/zsh/zprezto"]
+	path = profiles/zsh/zprezto
+	url = https://github.com/sorin-ionescu/prezto.git

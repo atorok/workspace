@@ -130,10 +130,9 @@ bindsym $mod+Shift+0 move container to $w10
 bar {
     strip_workspace_numbers yes
     #tray_output primary
-    font pango:Source Code Pro for Powerline, FontAwesome 8
+    font pango:Fira Mono 8
     position top
-
-    status_command i3status --config ~/.i3/i3status.conf
+    status_command i3blocks
 
 }
 
@@ -209,4 +208,4 @@ assign [class="xfreerdp"] 9
 assign [class="jetbrains-idea-ce"]  2
 assign [class="Pidgin"]  8
 
-
+for_window [class="Yad"] floating enable

@@ -1,6 +1,8 @@
 if ! [ -f  ~/.allshesllsrc.base ] ; then echo "No such file: ~/.allshesllsrc.base" ; fi
 source ~/.allshesllsrc.base
 
+source ~/.zprezto/init.zsh
+
 . /usr/share/stderred/stderred.sh
 
 # TODO: Rename
@@ -16,20 +18,8 @@ if tty > /dev/null; then
 	source_rc .env/aliases
 fi
 
-# create a zkbd compatible hash;
-# to add other keys to this hash, see: man 5 terminfo
-typeset -A key
-
-key[Home]=${terminfo[khome]}
-key[End]=${terminfo[kend]}
-key[Insert]=${terminfo[kich1]}
-key[Delete]=${terminfo[kdch1]}
-key[Up]=${terminfo[kcuu1]}
-key[Down]=${terminfo[kcud1]}
-key[Left]=${terminfo[kcub1]}
-key[Right]=${terminfo[kcuf1]}
-key[PageUp]=${terminfo[kpp]}
-key[PageDown]=${terminfo[knp]}
+# generated with  zkbd 
+source ~/.zkbd/xterm-256color-:0
 
 # setup key accordingly
 [[ -n "${key[Home]}"    ]]  && bindkey  "${key[Home]}"    beginning-of-line
@@ -40,8 +30,6 @@ key[PageDown]=${terminfo[knp]}
 [[ -n "${key[Down]}"    ]]  && bindkey  "${key[Down]}"    down-line-or-history
 [[ -n "${key[Left]}"    ]]  && bindkey  "${key[Left]}"    backward-char
 [[ -n "${key[Right]}"   ]]  && bindkey  "${key[Right]}"   forward-char
-
-# TODO Arch packages
 
 . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 . ~/.liquidprompt/liquidprompt
@@ -72,5 +60,4 @@ bindkey "${key[PageDown]}" history-beginning-search-forward
 [[ -f /usr/bin/aws_zsh_completer.sh ]] && source /usr/bin/aws_zsh_completer.sh
 [[ -f /opt/google-cloud-sdk/path.zsh.inc ]] && source /opt/google-cloud-sdk/path.zsh.inc
 [[ -f /opt/google-cloud-sdk/completion.zsh.inc ]] && source /opt/google-cloud-sdk/completion.zsh.inc
-
 

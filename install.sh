@@ -66,8 +66,7 @@ else
    install_profile "$1"
 fi
 
-sudo cp -v jetbrains-idea.desktop /usr/share/applications
-
+mkdir -p ~/.vim_backup
 echo
 clr_green "Success"
 echo
