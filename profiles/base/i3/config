@@ -205,7 +205,7 @@ for_window [class="HipChat"]  floating disable
 assign [class="skype"]    1
 assign [class="Skype"]    1
 assign [class="xfreerdp"] 9
-assign [class="jetbrains-idea-ce"]  2
+assign [class="^jetbrains"]  2
 assign [class="Pidgin"]  8
 
 for_window [class="Yad"] floating enable
