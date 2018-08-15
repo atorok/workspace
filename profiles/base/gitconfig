@@ -18,3 +18,5 @@
   pretty = format:%h %Cblue%ad%Creset %ae %Cgreen%s%Creset    
 #[core]
 #	askpass = /usr/bin/sshaskpass
+[credential]
+	helper = cache --timeout 86400
