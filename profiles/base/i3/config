@@ -186,8 +186,8 @@ exec --no-startup-id  xset r rate 200 30
 #  clean up the pid file, often it doesn't start because someone else is running there
 exec rm /home/alpar/.local/share/anamnesis/anamnesis.pid
 exec --no-startup-id anamnesis --start
-# start system monitor
-exec --no-startup-id glances
+
+exec xautolock -time 5 -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'" -locker i3lock
 
 bindsym $mod+k exec "anamnesis -b"
 # Load the workspace
