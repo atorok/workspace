@@ -190,7 +190,7 @@ set visualbell t_vb=
 set noerrorbells visualbell t_vb=
 
 if has('gui_running')
-    set guifont=FiraCode 12
+    set guifont="FiraCode 12"
 endif
 
 let g:pymode_rope = 0
