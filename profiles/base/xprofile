@@ -1,5 +1,5 @@
 xsetroot -solid '#000000'
-compton -b --config ~/.compton.conf
+picom -b
 start-pulseaudio-x11
 setxkbmap -option ctrl:nocaps
 xbindkeys

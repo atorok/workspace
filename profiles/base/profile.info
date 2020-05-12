@@ -28,7 +28,6 @@ DOTMODULES="
     vim_undodir
     xserverrc
     xinitrc
-    compton.conf
     Xresources
     liquidprompt
     config

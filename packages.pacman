@@ -16,7 +16,7 @@ darktable
 perl-image-exiftool
 xorg-xinit
 pulseaudio
-compton
+picom
 pavucontrol
 awesome-terminal-fonts
 otf-font-awesome
