@@ -61,3 +61,7 @@ bindkey "${key[PageDown]}" history-beginning-search-forward
 [[ -f /opt/google-cloud-sdk/path.zsh.inc ]] && source /opt/google-cloud-sdk/path.zsh.inc
 [[ -f /opt/google-cloud-sdk/completion.zsh.inc ]] && source /opt/google-cloud-sdk/completion.zsh.inc
 
+if [ -f "${HOME}/.gnupg/.gpg-agent-info" ]; then
+    . "${HOME}/.gnupg/.gpg-agent-info"
+    export GPG_AGENT_INFO
+fi

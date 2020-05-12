@@ -3,8 +3,6 @@
 	email = torokalpar@gmail.com
 [color]
 	ui = true
-[push]
-	default = current
 [alias]
     review = !post-review-git
     forcepush = push -u atorok --force HEAD
@@ -20,3 +18,5 @@
 #	askpass = /usr/bin/sshaskpass
 [credential]
 	helper = cache --timeout 86400
+[push]
+	default = current

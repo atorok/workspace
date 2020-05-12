@@ -13,3 +13,7 @@ export PYTHONPATH=~/lib/python:$PYTHONPATH
 
 # Enable parallel XZ compression and decompression
 export XZ_OPT="-T 0"
+
+# Clipmenu 
+export CM_DIR="~/.clipmenu"
+export CM_LAUNCHER=rofi

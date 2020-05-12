@@ -3,21 +3,20 @@
     "border": "normal",
     "floating": "auto_off",
     "layout": "splitv",
-    "percent": 0.72,
+    "percent": 0.7,
     "type": "con",
     "nodes": [
         {
             "border": "normal",
             "current_border_width": 2,
             "floating": "auto_off",
+            "name": "Browser",
             "geometry": {
-               "height": 2105,
-               "width": 2563,
-               "x": 2,
-               "y": 53
+               "height": 2101,
+               "width": 1920,
+               "x": 0,
+               "y": 59
             },
-            "name": "i3: Layout saving in i3 - Chromium",
-            "percent": 1,
             "swallows": [
                {
                 "window_role": "^browser$"
@@ -31,24 +30,24 @@
     "border": "normal",
     "floating": "auto_off",
     "layout": "tabbed",
-    "percent": 0.28,
+    "percent": 0.3,
     "type": "con",
     "nodes": [
         {
             "border": "normal",
             "current_border_width": 2,
             "floating": "auto_off",
+            "name": "WhatsApp",
+            "percent": 0.3,
             "geometry": {
-               "height": 2105,
-               "width": 1269,
-               "x": 2569,
-               "y": 53
+               "height": 2101,
+               "width": 1920,
+               "x": 1920,
+               "y": 59
             },
-            "name": "WhatsApp - Chromium",
-            "percent": 0.5,
             "swallows": [
                {
-                "title": "^WhatsApp"
+                "title": "^https://web.whatsapp.com - WhatsApp"
                }
             ],
             "type": "con"
@@ -57,17 +56,17 @@
             "border": "normal",
             "current_border_width": 2,
             "floating": "auto_off",
-            "geometry": {
-               "height": 530,
-               "width": 882,
-               "x": 0,
-               "y": 0
-            },
             "name": "Slack",
-            "percent": 0.5,
+            "percent": 0.3,
+            "geometry": {
+               "height": 2101,
+               "width": 1920,
+               "x": 1920,
+               "y": 59
+            },
             "swallows": [
                {
-                "class": "^Slack$"
+                "title": "^https://app.slack.com - Slack"
                }
             ],
             "type": "con"

@@ -45,3 +45,18 @@ add_python_path() {
 	fi
 }
 
+
+gradlew() {
+   local loc=$PWD
+   while ! [ -x $loc/gradlew ] ; do 
+       if [ -d $loc/.git ] ; then 
+           break;
+       fi
+       loc="$loc/.." ; 
+   done ;
+   if [ -x $loc/gradlew  ] ; then
+       $loc/gradlew $@
+   else 
+       echo "No Gradle Wrapper"
+   fi
+}

@@ -1,9 +1,11 @@
 # vim set ft:sh
+export JAVA14_HOME=/home/alpar/opt/openjdk-14
+export JAVA13_HOME=/home/alpar/opt/openjdk-13
+export JAVA12_HOME=/home/alpar/opt/jdk-12
 export JAVA11_HOME=/home/alpar/opt/jdk-11-28 
 export JAVA10_HOME=/usr/lib/jvm/java-10-openjdk/
 export JAVA9_HOME=/home/alpar/opt/jdk-9-181
 export JAVA8_HOME=/usr/lib/jvm/java-8-openjdk/
 export JAVA8FIPS_HOME=/home/alpar/opt/jdk1.8.0_192_fips
-export JAVA7_HOME=/usr/lib/jvm/java-7-openjdk/
 
-export JAVA_HOME=$JAVA10_HOME
+#export JAVA_HOME=$JAVA12_HOME
