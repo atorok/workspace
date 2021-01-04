@@ -1,15 +1,9 @@
 [submodule "shellib"]
 	path = shellib
 	url = https://github.com/maxtsepkov/bash_colors.git
-[submodule "profiles/base/vim/bundle/python-mode"]
-	path = profiles/base/vim/bundle/python-mode
-	url = https://github.com/klen/python-mode.git
 [submodule "profiles/base/vim/bundle/vim-gradle"]
 	path = profiles/base/vim/bundle/vim-gradle
 	url = https://github.com/tfnico/vim-gradle.git
-[submodule "profiles/base/vim/bundle/vcscommand.vim"]
-	path = profiles/base/vim/bundle/vcscommand.vim
-	url = https://github.com/vim-scripts/vcscommand.vim.git
 [submodule "profiles/base/vim/bundle/confluencewiki.vim"]
 	path = profiles/base/vim/bundle/confluencewiki.vim
 	url = https://github.com/vim-scripts/confluencewiki.vim.git
@@ -22,9 +16,6 @@
 [submodule "profiles/base/vim/bundle/tabular"]
 	path = profiles/base/vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "profiles/base/vim/bundle/vim-markdown"]
-	path = profiles/base/vim/bundle/vim-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "liquidprompt"]
 	path = profiles/base/liquidprompt
 	url = https://github.com/nojhan/liquidprompt.git
