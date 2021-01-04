@@ -114,7 +114,9 @@ add action=mark-packet chain=prerouting new-packet-mark=zoom passthrough=yes src
 add action=mark-packet chain=prerouting dst-address-list=zoom_ip new-packet-mark=zoom passthrough=yes;
 
 # Prioritise zoom traffic
-/queue simple
-add name="Zoom QOS" packet-marks=zoom priority=3/3 queue=default/default target=""
+
+add chain=prerouting dst-address-list=zoom_ip action=change-dscp new-dscp=56
+
+/queue simple add name="Zoom QOS" packet-marks=zoom priority=3/3 queue=default/default target=""
 
 	

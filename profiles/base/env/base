@@ -15,5 +15,5 @@ export PYTHONPATH=~/lib/python:$PYTHONPATH
 export XZ_OPT="-T 0"
 
 # Clipmenu 
-export CM_DIR="~/.clipmenu"
+export CM_DIR="/home/$USER/.clipmenu"
 export CM_LAUNCHER=rofi

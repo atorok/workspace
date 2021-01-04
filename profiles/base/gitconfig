@@ -1,11 +1,11 @@
 [user]
 	name = Alpar Torok
-	email = torokalpar@gmail.com
+	email = alpar.torok@elastic.co
+	signingkey = 546164978618BC0B
 [color]
 	ui = true
 [alias]
-    review = !post-review-git
-    forcepush = push -u atorok --force HEAD
+    forcepush = push -u alpar-t --force HEAD
     change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "
     pr = "!f() { git fetch origin pull/$1/head:pr/$1; }; f"
 [merge]
@@ -17,6 +17,10 @@
 #[core]
 #	askpass = /usr/bin/sshaskpass
 [credential]
-	helper = cache --timeout 86400
-[push]
-	default = current
+	helper = cache --timeout 864000
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[commit]
+	gpgsign = true
+[branch]
+	autosetupmerge = always

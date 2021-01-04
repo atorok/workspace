@@ -6,3 +6,5 @@ stderred-git
 google-cloud-sdk
 zoom
 xcwd-git
+bitwarden-cli 
+python-bitwarden-keyring

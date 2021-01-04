@@ -179,6 +179,8 @@ bindsym $mod+p mode "power"
 exec --no-startup-id  xset r rate 200 30
 # The clipboard ..
 exec --no-startup-id clipmenud
+# composite manager ..
+exec --no-startup-id picom -b
 
 exec xautolock -time 15 -locker "i3lock"
 

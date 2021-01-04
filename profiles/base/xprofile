@@ -1,12 +1,9 @@
 xsetroot -solid '#000000'
-picom -b
 start-pulseaudio-x11
 setxkbmap -option ctrl:nocaps
 xbindkeys
 
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa_github
-
-sudo kbdrate -r 40 -d 15
 
 test -f ~/.xprofile.local &&  source ~/.xprofile.local
