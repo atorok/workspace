@@ -4,17 +4,17 @@
     "current_border_width": 4,
     "floating": "auto_off",
     "geometry": {
-       "height": 757,
-       "width": 1214,
+       "height": 2098,
+       "width": 3832,
        "x": 0,
-       "y": 0
+       "y": 58
     },
     "marks": [],
-    "name": "Terminal",
-    "percent": 0.5,
+    "name": "Elastic Mail — Mozilla Firefox",
+    "percent": 1,
     "swallows": [
        {
-          "class": "^Xfce4\\-terminal$"
+          "title": "Elastic\\ Mail\\ \\—\\ Mozilla\\ Firefox$"
        }
     ],
     "type": "con"
