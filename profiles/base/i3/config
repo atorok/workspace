@@ -37,7 +37,7 @@ bindsym $mod+0x5c exec thunar `xcwd`
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec j4-dmenu-desktop --dmenu="rofi -dmenu -i -p 'Arch Linux' -fn 'Liberation Mono:pixelsize=16'"
+bindsym $mod+d exec rofi -show drun -i -p 'Arch Linux' -fn 'Liberation Mono:pixelsize=16'
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -184,7 +184,7 @@ exec --no-startup-id picom -b
 
 exec xautolock -time 15 -locker "i3lock"
 
-bindsym $mod+k exec "clipmenu -i"
+bindsym $mod+k exec "clipmenu -i -fn 'Liberation Mono:pixelsize=16'"
 # Load the workspace
 bindsym $mod+i exec --no-startup-id  "$HOME/bin/init_i3.sh"
 bindsym $mod+Shift+i exec --no-startup-id  "$HOME/bin/dspsetup"

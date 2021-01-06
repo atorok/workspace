@@ -1,10 +1,8 @@
-google-chrome
-otf-fira-code-git
-j4-dmenu-desktop-git
-yad
+yad-git
 stderred-git
 google-cloud-sdk
 zoom
 xcwd-git
 bitwarden-cli 
 python-bitwarden-keyring
+rofi-dmenu

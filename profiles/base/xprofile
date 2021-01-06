@@ -3,7 +3,6 @@ start-pulseaudio-x11
 setxkbmap -option ctrl:nocaps
 xbindkeys
 
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa_github
+prime-offload
 
 test -f ~/.xprofile.local &&  source ~/.xprofile.local

@@ -53,3 +53,8 @@ tk
 clipmenu
 rofi
 container-diff 
+ttf-fira-code
+inetutils
+gvfs
+util-linux
+thermald
