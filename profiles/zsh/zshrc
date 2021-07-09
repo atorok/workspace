@@ -66,4 +66,4 @@ if [ -f "${HOME}/.gnupg/.gpg-agent-info" ]; then
     export GPG_AGENT_INFO
 fi
 
-set -o vi
+#set -o vi

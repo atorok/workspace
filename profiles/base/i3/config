@@ -29,9 +29,14 @@ font pango:Liberation Sans 10
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Load the workspace
+exec --no-startup-id  "$HOME/bin/init_i3.sh"
+
 #### Default apps 
 bindsym $mod+Return exec xfce4-terminal --working-directory `xcwd` --command="zsh"
 bindsym $mod+0x5c exec thunar `xcwd`
+
+bindsym $mod+c exec "gcalcli --calendar=alpar.torok@elastic.co agenda --tsv --details description $(date -Id) $(date -Id --date tomorrow) | awk -F'\t' '{ if (match($6, /https?(:\/\/[A-Za-z0-9.-]*zoom[.]us[^ \"<\\]+)/, m)) { print $5 \"\tzoommtg\" m[1] } }' | column -ts $'\t' -o $'\t' | rofi -dmenu -i -mesg 'Open an upcoming Zoom meeting' | awk -F'\t' '{ print $NF; }' | xargs xdg-open"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -76,6 +81,12 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
+
+# Media 
+#bindsym $mod+period exec mpris-ctl next
+bindsym XF86AudioNext exec "exec mpris-ctl next"
+bindsym XF86AudioPrev exec "mpris-ctl prev"
+bindsym XF86AudioPlay exec "mpris-ctl pp"
 
 
 set $w1 workspace 1
@@ -174,33 +185,15 @@ mode "power" {
 }
 bindsym $mod+p mode "power"
 
-
-# Configure the keyboard
-exec --no-startup-id  xset r rate 200 30
-# The clipboard ..
-exec --no-startup-id clipmenud
-# composite manager ..
-exec --no-startup-id picom -b
-
-exec xautolock -time 15 -locker "i3lock"
-
-bindsym $mod+k exec "clipmenu -i -fn 'Liberation Mono:pixelsize=16'"
-# Load the workspace
-bindsym $mod+i exec --no-startup-id  "$HOME/bin/init_i3.sh"
-bindsym $mod+Shift+i exec --no-startup-id  "$HOME/bin/dspsetup"
+bindsym $mod+k exec "clipmenu -i -fn"
+bindsym $mod+n exec "networkmanager_dmenu -i"
 
 # Application control rules 
 
-for_window [title="anamnesis"] floating enable
-for_window [class="kcalc"] floating enable
-for_window [class="pavucontrol"] floating enable
-for_window [class="xfreerdp"]  floating disable
-for_window [class="HipChat"]  floating disable
+for_window [class="AVPNC"] floating enable
+for_window [class="xcalc"] floating enable
+for_window [class="Pavucontrol"] floating enable
 
-assign [class="skype"]    1
-assign [class="Skype"]    1
-assign [class="xfreerdp"] 9
 assign [class="^jetbrains"]  2
-assign [class="Pidgin"]  8
 
 for_window [class="Yad"] floating enable

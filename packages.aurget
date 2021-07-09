@@ -6,3 +6,4 @@ xcwd-git
 bitwarden-cli 
 python-bitwarden-keyring
 rofi-dmenu
+mpris-ctl

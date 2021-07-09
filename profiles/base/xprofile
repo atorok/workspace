@@ -1,8 +1,23 @@
+. ~/.env/base
 xsetroot -solid '#000000'
 start-pulseaudio-x11
-setxkbmap -option ctrl:nocaps
+
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+xautolock -time 15 -locker "i3lock" &
+clipmenud &
+picom -b
+
+xset r rate 200 30
+
+if [ "$WE_ARE_DOCKED" == "1" ] ; then
+    intel-virtual-output
+    xrandr --output VIRTUAL1 --auto
+fi
+
 xbindkeys
 
-prime-offload
+# Remap Caps Lock and Pause to Super 
+setxkbmap -option caps:super
+xmodmap -e "keycode 127 = Super_L"
 
-test -f ~/.xprofile.local &&  source ~/.xprofile.local
+

@@ -6,7 +6,7 @@ if [ -z "$IMAGE" ] ; then
   exit 1
 fi
 
-KIND=${KIND:-elasticsearch-ci}
+KIND=${KIND:-cloud-ci}
 
 # this is what CI uses
 SIZE="--custom-cpu 32 --custom-memory 98304MB"

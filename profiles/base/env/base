@@ -2,7 +2,7 @@
 ##############################################################################
 # The environment                                                             #
 ###############################################################################
-export PATH=~/bin:$PATH
+export PATH=~/bin:~/.local/bin:$PATH
 export EDITOR=vim   
 export SHELL="/bin/bash"
 export INPUTRC=~/.env/inputrc
